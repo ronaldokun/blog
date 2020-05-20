@@ -1,1 +1,1 @@
-Sitemap: habituo.me/despejo/sitemap.xml
+Sitemap: habituo.me/sitemap.xml
