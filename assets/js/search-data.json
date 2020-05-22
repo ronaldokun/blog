@@ -25,13 +25,22 @@
 
   
   
+      ,"page0": {
+          "title": "404 - Page not found",
+          "content": "Whoops, this page doesn&#39;t exist. . Move along. (404 error) .",
+          "url": "http://habituo.me/404.html",
+          "relUrl": "/404.html",
+          "date": ""
+      }
+      
+  
 
   
       ,"page1": {
-          "title": "About Me",
-          "content": "This is where you put the contents of your About page. Like all your pages, it’s in Markdown format. . This website is powered by fastpages 1. . a blogging platform that natively supports Jupyter notebooks in addition to other formats. &#8617; . |",
-          "url": "http://habituo.me/about/",
-          "relUrl": "/about/",
+          "title": "Sobre mim",
+          "content": "Meu nome é Ronaldo S.A. Batista. Formei-me em Ciências Moleculares na USP, mas as tribulações da vida me impediram de seguir o plano de ser um acadêmico. Desde então atuo como fiscal de serviços privados na ANATEL e sou muito grato por tudo que essa posição me proveu. . No entanto, nunca abandonei o estudo de Física, Matemática e Programação, em vez disso os tornei um hobby. . Atualmente programo e faço projetos de Machine Learning nas horas vagas, além de ler e passar o tempo com a família e amigos. . Sempre fui vidrado em como criar melhores hábitos e qual a melhor maneira de atingir nossos objetivos, por que a vida é curta e se pudermos torná-la mais eficiente vale a tentativa. . Esse blog é uma tentativa de criar o hábito de escrever e drenar um pouco a tagarelice constante que rola na minha cachola. .",
+          "url": "http://habituo.me/_pages/about.html",
+          "relUrl": "/_pages/about.html",
           "date": ""
       }
       
