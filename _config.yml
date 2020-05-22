@@ -41,7 +41,7 @@ minima:
   social_links:
     twitter: ronaldokun
     github: ronaldokun
-    linkedin: https://www.linkedin.com/in/ronaldo-s-a-batista 
+    linkedin: ronaldo-s-a-batista 
 
 # Set this to true to get LaTeX math equation support
 use_math: true 
