@@ -1,1 +1,1 @@
-Sitemap: http://habituo.me/sitemap.xml
+Sitemap: https://habituo.me/sitemap.xml
