@@ -6,31 +6,35 @@
 <title>Tensores e Multiplicação de Matrizes | Habituo.me</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Tensores e Multiplicação de Matrizes" />
+<meta name="author" content="Ronaldo S.A. Batista" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
 <meta property="og:description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
-<link rel="canonical" href="https://habituo.me/2020/05/23/Tensores.html" />
-<meta property="og:url" content="https://habituo.me/2020/05/23/Tensores.html" />
+<link rel="canonical" href="https://habituo.me/pytorch/basics/2020/05/23/Tensores.html" />
+<meta property="og:url" content="https://habituo.me/pytorch/basics/2020/05/23/Tensores.html" />
 <meta property="og:site_name" content="Habituo.me" />
+<meta property="og:image" content="https://habituo.me/images/multiplication.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-23T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/2020/05/23/Tensores.html"},"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","@type":"BlogPosting","url":"https://habituo.me/2020/05/23/Tensores.html","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Ronaldo S.A. Batista"},"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/pytorch/basics/2020/05/23/Tensores.html"},"@type":"BlogPosting","url":"https://habituo.me/pytorch/basics/2020/05/23/Tensores.html","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","image":"https://habituo.me/images/multiplication.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://habituo.me/feed.xml" title="Habituo.me" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Tensores e Multiplicação de Matrizes | Habituo.me</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Tensores e Multiplicação de Matrizes" />
+<meta name="author" content="Ronaldo S.A. Batista" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
 <meta property="og:description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
-<link rel="canonical" href="https://habituo.me/2020/05/23/Tensores.html" />
-<meta property="og:url" content="https://habituo.me/2020/05/23/Tensores.html" />
+<link rel="canonical" href="https://habituo.me/pytorch/basics/2020/05/23/Tensores.html" />
+<meta property="og:url" content="https://habituo.me/pytorch/basics/2020/05/23/Tensores.html" />
 <meta property="og:site_name" content="Habituo.me" />
+<meta property="og:image" content="https://habituo.me/images/multiplication.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-23T00:00:00-05:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/2020/05/23/Tensores.html"},"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","@type":"BlogPosting","url":"https://habituo.me/2020/05/23/Tensores.html","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Ronaldo S.A. Batista"},"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/pytorch/basics/2020/05/23/Tensores.html"},"@type":"BlogPosting","url":"https://habituo.me/pytorch/basics/2020/05/23/Tensores.html","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","image":"https://habituo.me/images/multiplication.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -103,7 +107,9 @@ window.onload = wrap_img;
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Tensores e Multiplicação de Matrizes</h1><p class="page-description">Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-23T00:00:00-05:00" itemprop="datePublished">
         May 23, 2020
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Ronaldo S.A. Batista</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -111,6 +117,16 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#pytorch">pytorch</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#basics">basics</a>
+        
+      
+      </p>
     
 
     
@@ -123,12 +139,7 @@ window.onload = wrap_img;
     </a>
 </div>
 
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/ronaldokun/blog/master?filepath=_notebooks%2F2020-05-23-Tensores.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
+          
           <div class="px-2">
     <a href="https://colab.research.google.com/github/ronaldokun/blog/blob/master/_notebooks/2020-05-23-Tensores.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
@@ -138,7 +149,17 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Mudar-o-formato-do-tensor">Mudar o formato do tensor </a></li>
+<li class="toc-entry toc-h2"><a href="#Empilhar-Tensores">Empilhar Tensores </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Criar-tensores-booleanos-à-partir-de-comparações">Criar tensores booleanos à partir de comparações </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Broadcasting">Broadcasting </a></li>
+<li class="toc-entry toc-h2"><a href="#Operações-Elemento-a-Elemento">Operações Elemento a Elemento </a></li>
+<li class="toc-entry toc-h2"><a href="#Multiplicação-de-Matrizes">Multiplicação de Matrizes </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -154,17 +175,20 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div class="flash flash-success">
-    <svg class="octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"></path></svg>
+<p></p>
+<div class="flash flash-success">
+    <svg class="octicon octicon-checklist" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"></path></svg>
     <strong>Tip: </strong>Um número ( escalar ), um vetor, uma matriz ou qualquer vetor n-dimensional são simplesmente Tensores de diferentes ordens. Um escalar é um tensor de ordem (ou dimensão) 0, um vetor é um tensor de ordem 1, uma matriz é um tensor de ordem 2. Uma matriz "cúbica" é um tensor de ordem 3 e assim por diante. Assim nos referimos a tudo simplesmente como "tensores", sejam eles vetores, matrizes ou objetos de dimensão superior.
-</div></p>
+</div>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Precisamos primeiro importar as dependências, nesse caso a biblioteca pytorch e numpy</p>
 
@@ -189,7 +213,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Escalar</p>
 
@@ -229,7 +254,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>5.</code> é uma abreviação de <code>5.0</code>. Por padrão todos os tensores criados são do tipo ponto flutuante. Como mencionamos um escalar é simplesmente um tensor de dimensão ou ordem 0.</p>
 
@@ -269,7 +295,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Se quisermos recuperar o tensor escalar como número, útil quando precisamos usar valor fora dos cálculos de tensores, usamos o método <code>item</code>:</p>
 
@@ -309,7 +336,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Vetor (unidimensional)</p>
 
@@ -349,7 +377,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Aqui criamos um tensor à partir de uma lista, podemos criar tensores de vários objetos python.</p>
 
@@ -488,7 +517,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><code>Pytorch</code> é fortemente integrado com o <code>numpy</code>, inclusive empresta muito da API utilizada por este. Se você possui alguma familiaridade com numpy facilmente consegue compreender e escrever código em Pytorch.</p>
 
@@ -597,9 +627,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Mudar-o-formato-do-tensor">Mudar o formato do tensor<a class="anchor-link" href="#Mudar-o-formato-do-tensor"> </a></h2><p>Frequentemente temos que adaptar o formato dos tensores para efetuar diversas operações, isso é feito com o método <code>reshape</code>. Anteriormente definimos o tensor unidimensional <code>x</code>com 12 elementos. Podemos transformá-lo num tensor bidimensional, desde que mantido o número de elementos: 3x4,  4x3, 2x6 etc...</p>
+<h2 id="Mudar-o-formato-do-tensor">
+<a class="anchor" href="#Mudar-o-formato-do-tensor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mudar o formato do tensor<a class="anchor-link" href="#Mudar-o-formato-do-tensor"> </a>
+</h2>
+<p>Frequentemente temos que adaptar o formato dos tensores para efetuar diversas operações, isso é feito com o método <code>reshape</code>. Anteriormente definimos o tensor unidimensional <code>x</code>com 12 elementos. Podemos transformá-lo num tensor bidimensional, desde que mantido o número de elementos: 3x4,  4x3, 2x6 etc...</p>
 
 </div>
 </div>
@@ -654,7 +688,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Se não informarmos 1 dimensão e colocarmos <code>-1</code> em seu lugar, o Pytorch infere as demais.</p>
 
@@ -804,7 +839,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Em vez de criarmos tensores manualmente, podemos usar a função <code>torch.randn</code> e criar tensores aleatórios amostrados de uma distribuição normal com média 0 e desvio padrão 1</p>
 
@@ -912,7 +948,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Podemos criar um tensor Nulo</p>
 
@@ -954,7 +991,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Tensor Unitário</p>
 
@@ -1000,7 +1038,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Amostragem de uma distribuição</p>
 
@@ -1090,9 +1129,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Empilhar-Tensores">Empilhar Tensores<a class="anchor-link" href="#Empilhar-Tensores"> </a></h2><p>É comum precisarmos combinar diferentes tensores ao longo de algum eixo. Isso normalmente significa criarmos uma dimensão adicional e mantermos as demais dimensões. Sejam 2 tensores 3x4:</p>
+<h2 id="Empilhar-Tensores">
+<a class="anchor" href="#Empilhar-Tensores" aria-hidden="true"><span class="octicon octicon-link"></span></a>Empilhar Tensores<a class="anchor-link" href="#Empilhar-Tensores"> </a>
+</h2>
+<p>É comum precisarmos combinar diferentes tensores ao longo de algum eixo. Isso normalmente significa criarmos uma dimensão adicional e mantermos as demais dimensões. Sejam 2 tensores 3x4:</p>
 
 </div>
 </div>
@@ -1153,7 +1196,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Vamos empilhá-los à partir da primeira dimensão</p>
 
@@ -1232,7 +1276,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Vemos que foi criada uma dimensão adicional e colocado no início, dado o parâmetro <code>dim=0</code>. Uma noção geométrica de empilhar os tensores na primeira dimensão seria: somar as linhas dos dois tensores 3x4 e formarmos um tensor 6x4. No entanto não é isso que ocorre, simplesmente criamos um "cubo", com a dimensão (2,3,4).</p>
 
@@ -1391,9 +1436,12 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Criar-tensores-booleanos-&#224;-partir-de-compara&#231;&#245;es">Criar tensores booleanos &#224; partir de compara&#231;&#245;es<a class="anchor-link" href="#Criar-tensores-booleanos-&#224;-partir-de-compara&#231;&#245;es"> </a></h3>
+<h3 id="Criar-tensores-booleanos-à-partir-de-comparações">
+<a class="anchor" href="#Criar-tensores-booleanos-%C3%A0-partir-de-compara%C3%A7%C3%B5es" aria-hidden="true"><span class="octicon octicon-link"></span></a>Criar tensores booleanos à partir de comparações<a class="anchor-link" href="#Criar-tensores-booleanos-%C3%A0-partir-de-compara%C3%A7%C3%B5es"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -1432,7 +1480,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Como em python, ao tentarmos fazer operações numéricas com valores booleanos, temos <code>True == 1</code> e <code>False == 0</code>. Assim ao somarmos os valores do tensor acima temos o resultado <code>2</code>.</p>
 
@@ -1472,9 +1521,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Broadcasting">Broadcasting<a class="anchor-link" href="#Broadcasting"> </a></h2><p>Uma tradução livre para o termo <em>Broadcasting</em> é <em>transmissão</em>. Veremos o porquê a seguir.</p>
+<h2 id="Broadcasting">
+<a class="anchor" href="#Broadcasting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Broadcasting<a class="anchor-link" href="#Broadcasting"> </a>
+</h2>
+<p>Uma tradução livre para o termo <em>Broadcasting</em> é <em>transmissão</em>. Veremos o porquê a seguir.</p>
 
 </div>
 </div>
@@ -1550,14 +1603,16 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Como as dimensões não casam, se quisermos adicionar essas matrizes, nós pegamos as dimensões maiores de cada matriz e assim formamos uma matriz 3x2. ( A primeira dimensão maior é 3, da primeira matriz, e a segunda dimensão maior é 2 da segunda matriz.) E assim ajustamos as dimensões das matrizes originais para essa dimensão.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Para a primeira matriz, 3x1, a única coluna é replicada, i.e., a coluna 1 é <em>transmitida</em> para a coluna 2 e a matriz a fica assim:</p>
 
@@ -1583,7 +1638,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Para a segunda matrix, 1x2, a primeira linha é replicada 3 vezes, então para o cálculo a matriz b fica assim:</p>
 
@@ -1609,14 +1665,16 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Isso é feito automaticamente durante a operação efetuada.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Vamos testar se isso está correto e verificar se a operação de soma é equivalente.</p>
 
@@ -1693,16 +1751,20 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>O <em>broadcasting</em> em vários casos não é intuitivo, esse foi um exemplo super simples e somente a utilização constante e botar a mão na massa com vários exemplos é que torna o conceito um pouco mais claro. Consulte esse <a href="https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html">link</a> a seguir para um tutorial detalhado sobre broadcasting</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Opera&#231;&#245;es-Elemento-a-Elemento">Opera&#231;&#245;es Elemento a Elemento<a class="anchor-link" href="#Opera&#231;&#245;es-Elemento-a-Elemento"> </a></h2>
+<h2 id="Operações-Elemento-a-Elemento">
+<a class="anchor" href="#Opera%C3%A7%C3%B5es-Elemento-a-Elemento" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operações Elemento a Elemento<a class="anchor-link" href="#Opera%C3%A7%C3%B5es-Elemento-a-Elemento"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1724,7 +1786,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As seguintes operações em tensores são efetuadas <em>elemento a elemento</em>, isto é, a operação tem como resultado um tensor da mesma forma, porém com a operação efetuada nos elementos de mesmo índice. Caso a forma divirja e as dimensões sejam compatíveis com a operação de broadcasting, este é efetuado.</p>
 
@@ -1767,7 +1830,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Operação Unária - e.g. Exponenciação</p>
 
@@ -1807,10 +1871,14 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multiplica&#231;&#227;o-de-Matrizes">Multiplica&#231;&#227;o de Matrizes<a class="anchor-link" href="#Multiplica&#231;&#227;o-de-Matrizes"> </a></h2><p>A definição de Multiplicação de 2 matrizes A e B é:
-<img src="/images/copied_from_nb/images/matmul.jpeg" alt="" title="Credit: https://pt.overleaf.com/articles/matrix-multiplication-revised/qkvxttgrsrqh" /></p>
+<h2 id="Multiplicação-de-Matrizes">
+<a class="anchor" href="#Multiplica%C3%A7%C3%A3o-de-Matrizes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Multiplicação de Matrizes<a class="anchor-link" href="#Multiplica%C3%A7%C3%A3o-de-Matrizes"> </a>
+</h2>
+<p>A definição de Multiplicação de 2 matrizes A e B é:
+<img src="/images/copied_from_nb/images/matmul.jpeg" alt="" title="Credit: https://pt.overleaf.com/articles/matrix-multiplication-revised/qkvxttgrsrqh"></p>
 <p>Em código, no geral é mais fácil visualizar:</p>
 
 </div>
@@ -1824,7 +1892,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">matmul</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span><span class="n">b</span><span class="p">:</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="s2">&quot;Retorna a matrix produto entre a e b&quot;</span>
+    <span class="s2">"Retorna a matrix produto entre a e b"</span>
     <span class="c1"># Dimensões</span>
     <span class="n">a_linhas</span><span class="p">,</span> <span class="n">a_cols</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">shape</span> 
     <span class="n">b_linhas</span><span class="p">,</span> <span class="n">b_cols</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">shape</span>
@@ -1921,7 +1989,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>O número de colunas da primeira matriz deve ser igual ao número de linhas da segunda para podermos multiplicá-las. Assim vamos usar a função <code>reshape</code></p>
 
@@ -1982,7 +2051,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Agora podemos multiplicar ambas as matrizes e teremos como resultado uma matriz <code>z</code> de dimensão 3x3. Vamos calcular quanto tempo leva esse cálculo utilizando a definição básica com 3 loops.</p>
 
@@ -2021,14 +2091,16 @@ Wall time: 1.05 ms
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ao tentarmos eliminar os "loops", nós tornamos a operação mais eficiente, por utilizar debaixo dos panos métodos de "vetorização" do Numpy ou Pytorch.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Para eliminar o índice <code>k</code>, usamos a multiplicação elemento a elemento e o método <code>sum</code> do Tensor. Isso efetua a mesma operação efetuada anteriormente com o loop em <code>k</code></p>
 
@@ -2043,7 +2115,7 @@ Wall time: 1.05 ms
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">matmul</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span><span class="n">b</span><span class="p">:</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="s2">&quot;Retorna a matrix produto entre a e b&quot;</span>
+    <span class="s2">"Retorna a matrix produto entre a e b"</span>
     <span class="c1"># Dimensões</span>
     <span class="n">a_linhas</span><span class="p">,</span> <span class="n">a_cols</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">shape</span> 
     <span class="n">b_linhas</span><span class="p">,</span> <span class="n">b_cols</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">shape</span>
@@ -2097,7 +2169,8 @@ Wall time: 560 µs
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Para eliminarmos o loop no índice <code>j</code>, podemos indexar com o valor especial [None] ou usar <code>unsqueeze()</code>  para converter um tensor unidimensional em um vetor de 2 dimensões (A dimensão criada terá valor 1).</p>
 
@@ -2149,7 +2222,7 @@ Wall time: 560 µs
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">matmul</span><span class="p">(</span><span class="n">a</span><span class="p">:</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">,</span><span class="n">b</span><span class="p">:</span><span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">)</span><span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">:</span>
-    <span class="s2">&quot;Retorna a matrix produto entre a e b&quot;</span>
+    <span class="s2">"Retorna a matrix produto entre a e b"</span>
     <span class="c1"># Dimensões</span>
     <span class="n">a_linhas</span><span class="p">,</span> <span class="n">a_cols</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">shape</span> 
     <span class="n">b_linhas</span><span class="p">,</span> <span class="n">b_cols</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">shape</span>
@@ -2202,7 +2275,8 @@ Wall time: 230 µs
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Implementação do Pytorch</p>
 
@@ -2241,7 +2315,8 @@ Wall time: 102 µs
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Forma Equivalente</p>
 
@@ -2280,14 +2355,16 @@ Wall time: 128 µs
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Isso foi somente uma pincelada super básica sobre tensores e alguns conceitos e operações básicas sobre eles e uma ilustração em como implementar multiplicação de matrizes de forma básica e mais otimizada  para ilustrar tais conceitos. Por fim simplesmente utilizamos a implementação nativa do Pytorch quando formos de fato utilizar tais operações</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p></p>
 
@@ -2298,7 +2375,15 @@ Wall time: 128 µs
 
 
 
-  </div><a class="u-url" href="/2020/05/23/Tensores.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="ronaldokun/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/pytorch/basics/2020/05/23/Tensores.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
