@@ -7,30 +7,30 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Tensores e Multiplicação de Matrizes" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc…, como manipulação e processamento de Tensores." />
-<meta property="og:description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc…, como manipulação e processamento de Tensores." />
-<link rel="canonical" href="https://habituo.me/2020/05/23/_Tensores.html" />
-<meta property="og:url" content="https://habituo.me/2020/05/23/_Tensores.html" />
+<meta name="description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
+<meta property="og:description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
+<link rel="canonical" href="https://habituo.me/2020/05/23/Tensores.html" />
+<meta property="og:url" content="https://habituo.me/2020/05/23/Tensores.html" />
 <meta property="og:site_name" content="Habituo.me" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-23T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc…, como manipulação e processamento de Tensores.","@type":"BlogPosting","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","url":"https://habituo.me/2020/05/23/_Tensores.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/2020/05/23/_Tensores.html"},"@context":"https://schema.org"}</script>
+{"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","@type":"BlogPosting","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","url":"https://habituo.me/2020/05/23/Tensores.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/2020/05/23/Tensores.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://habituo.me/feed.xml" title="Habituo.me" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Tensores e Multiplicação de Matrizes | Habituo.me</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Tensores e Multiplicação de Matrizes" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc…, como manipulação e processamento de Tensores." />
-<meta property="og:description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc…, como manipulação e processamento de Tensores." />
-<link rel="canonical" href="https://habituo.me/2020/05/23/_Tensores.html" />
-<meta property="og:url" content="https://habituo.me/2020/05/23/_Tensores.html" />
+<meta name="description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
+<meta property="og:description" content="Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores." />
+<link rel="canonical" href="https://habituo.me/2020/05/23/Tensores.html" />
+<meta property="og:url" content="https://habituo.me/2020/05/23/Tensores.html" />
 <meta property="og:site_name" content="Habituo.me" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-05-23T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc…, como manipulação e processamento de Tensores.","@type":"BlogPosting","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","url":"https://habituo.me/2020/05/23/_Tensores.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/2020/05/23/_Tensores.html"},"@context":"https://schema.org"}</script>
+{"description":"Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","@type":"BlogPosting","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","url":"https://habituo.me/2020/05/23/Tensores.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/2020/05/23/Tensores.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -101,7 +101,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Tensores e Multiplicação de Matrizes</h1><p class="page-description">Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). Podemos considerar o cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc..., como manipulação e processamento de Tensores.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-23T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Tensores e Multiplicação de Matrizes</h1><p class="page-description">Tensor é a estrutura de dados básica de qualquer biblioteca de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-23T00:00:00-05:00" itemprop="datePublished">
         May 23, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -118,19 +118,19 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-wrap flex-justify-end">
           <div class="px-2">
 
-    <a href="https://github.com/ronaldokun/blog/tree/master/_notebooks/2020-05-23_Tensores.ipynb" role="button" target="_blank">
+    <a href="https://github.com/ronaldokun/blog/tree/master/_notebooks/2020-05-23-Tensores.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/ronaldokun/blog/master?filepath=_notebooks%2F2020-05-23_Tensores.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/ronaldokun/blog/master?filepath=_notebooks%2F2020-05-23-Tensores.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/ronaldokun/blog/blob/master/_notebooks/2020-05-23_Tensores.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/ronaldokun/blog/blob/master/_notebooks/2020-05-23-Tensores.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
@@ -142,7 +142,7 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2020-05-23_Tensores.ipynb
+# file to edit: _notebooks/2020-05-23-Tensores.ipynb
 -->
 
 <div class="container" id="notebook-container">
@@ -157,7 +157,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><div class="flash flash-success">
-    <svg class="octicon octicon-checklist octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"></path></svg>
+    <svg class="octicon octicon-checklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 8.5l-6 6-3-3L8.5 10l1.5 1.5L14.5 7 16 8.5zM5.7 12.2l.8.8H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h7c.55 0 1 .45 1 1v6.5l-.8-.8c-.39-.39-1.03-.39-1.42 0L5.7 10.8a.996.996 0 000 1.41v-.01zM4 4h5V3H4v1zm0 2h5V5H4v1zm0 2h3V7H4v1zM3 9H2v1h1V9zm0-2H2v1h1V7zm0-2H2v1h1V5zm0-2H2v1h1V3z"></path></svg>
     <strong>Tip: </strong>Um número ( escalar ), um vetor, uma matriz ou qualquer vetor n-dimensional são simplesmente Tensores de diferentes ordens. Um escalar é um tensor de ordem (ou dimensão) 0, um vetor é um tensor de ordem 1, uma matriz é um tensor de ordem 2. Uma matriz "cúbica" é um tensor de ordem 3 e assim por diante. Assim nos referimos a tudo simplesmente como "tensores", sejam eles vetores, matrizes ou objetos de dimensão superior.
 </div></p>
 
@@ -1611,6 +1611,13 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Isso é feito automaticamente durante a operação efetuada.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Vamos testar se isso está correto e verificar se a operação de soma é equivalente.</p>
 
 </div>
@@ -1688,7 +1695,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>O <em>broadcasting</em> em vários casos não é intuitivo, esse foi um exemplo super simples e somente a utilização constante e botar a mão na massa em vários exemplos é que torna o conceito um pouco mais claro. Consulte esse <a href="https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html">link</a> a seguir para um tutorial detalhado sobre broadcasting</p>
+<p>O <em>broadcasting</em> em vários casos não é intuitivo, esse foi um exemplo super simples e somente a utilização constante e botar a mão na massa com vários exemplos é que torna o conceito um pouco mais claro. Consulte esse <a href="https://jakevdp.github.io/PythonDataScienceHandbook/02.05-computation-on-arrays-broadcasting.html">link</a> a seguir para um tutorial detalhado sobre broadcasting</p>
 
 </div>
 </div>
@@ -1803,7 +1810,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Multiplica&#231;&#227;o-de-Matrizes">Multiplica&#231;&#227;o de Matrizes<a class="anchor-link" href="#Multiplica&#231;&#227;o-de-Matrizes"> </a></h2><p>A definição de Multiplicação de 2 matrizes A e B é:
-<img src="https://writelatex.s3.amazonaws.com/published_ver/6955.jpeg?X-Amz-Expires=14400&amp;X-Amz-Date=20200524T002254Z&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAWJBOALPNITA4UZ5V/20200524/us-east-1/s3/aws4_request&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=2af655f71afa4bfbec0c4fc2e835fd7133ba21958f1865396e8c1be45b4eb142" alt="" title="Credit: https://pt.overleaf.com/articles/matrix-multiplication-revised/qkvxttgrsrqh" /></p>
+<img src="/images/copied_from_nb/images/matmul.jpeg" alt="" title="Credit: https://pt.overleaf.com/articles/matrix-multiplication-revised/qkvxttgrsrqh" /></p>
 <p>Em código, no geral é mais fácil visualizar:</p>
 
 </div>
@@ -2280,11 +2287,18 @@ Wall time: 128 µs
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p></p>
+
+</div>
+</div>
+</div>
 </div>
 
 
 
-  </div><a class="u-url" href="/2020/05/23/_Tensores.html" hidden></a>
+  </div><a class="u-url" href="/2020/05/23/Tensores.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
