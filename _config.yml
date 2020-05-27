@@ -15,7 +15,6 @@ github_repo: "blog"
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
 url: "https://habituo.me" # the base hostname & protocol for your site, e.g. http://example.com
-
 ###########################################################
 #########  Special Instructions for baseurl ###############
 #
@@ -56,7 +55,7 @@ show_image: true
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics: 
+google_analytics: UA-167751908-1 
 
 exclude:
   - docker-compose.yml
