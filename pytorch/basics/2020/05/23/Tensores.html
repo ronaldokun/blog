@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
@@ -19,7 +20,13 @@
 <script type="application/ld+json">
 {"author":{"@type":"Person","name":"Ronaldo S.A. Batista"},"description":"O Tensor é a estrutura de dados básica para implementarmos desde redes neurais simples até Arquiteturas Complexas de Aprendizagem Profunda (i.e. Deep Learning ). O cerne de qualquer biblioteca de Aprendizagem Profunda, seja Tensorflow, Pytorch, Theano etc.., é a manipulação e processamento de Tensores.","mainEntityOfPage":{"@type":"WebPage","@id":"https://habituo.me/pytorch/basics/2020/05/23/Tensores.html"},"@type":"BlogPosting","url":"https://habituo.me/pytorch/basics/2020/05/23/Tensores.html","headline":"Tensores e Multiplicação de Matrizes","dateModified":"2020-05-23T00:00:00-05:00","datePublished":"2020-05-23T00:00:00-05:00","image":"https://habituo.me/images/multiplication.jpg","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://habituo.me/feed.xml" title="Habituo.me" /><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://habituo.me/feed.xml" title="Habituo.me" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-167751908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Tensores e Multiplicação de Matrizes | Habituo.me</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Tensores e Multiplicação de Matrizes" />
@@ -38,7 +45,13 @@
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
-<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://habituo.me/feed.xml" title="Habituo.me" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://habituo.me/feed.xml" title="Habituo.me" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-167751908-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
@@ -113,7 +126,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      14 min read
     
 </span></p>
 
@@ -536,9 +549,9 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>tensor([[ 0.0943,  0.0347, -0.8424],
-        [-0.1585, -1.3430,  0.1967],
-        [ 1.6525, -1.3381,  1.4075]])</pre>
+<pre>tensor([[ 0.1699, -1.9274,  1.2648],
+        [-0.5144,  1.1591,  1.2916],
+        [-0.5954, -0.0052, -1.9312]])</pre>
 </div>
 
 </div>
@@ -1353,7 +1366,7 @@ window.onload = wrap_img;
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-35-49750a02386c&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-31-49750a02386c&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>vetor<span class="ansi-blue-fg">.</span>reshape<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">)</span>
 
 <span class="ansi-red-fg">RuntimeError</span>: shape '[3, 4, 4]' is invalid for input of size 12</pre>
@@ -1396,6 +1409,24 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[0., 0., 0., 0.],
+        [0., 0., 0., 0.],
+        [0., 0., 0., 0.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1418,6 +1449,24 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[1., 1., 1., 1.],
+        [1., 1., 1., 1.],
+        [1., 1., 1., 1.]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1446,6 +1495,24 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[1., 0., 0.],
+        [0., 1., 0.],
+        [0., 0., 1.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1468,6 +1535,24 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[ 0.8128, -1.3172, -0.1158,  0.4305],
+        [-0.1031, -0.8746,  0.0297, -0.6256],
+        [-0.3770,  0.5695,  0.7706,  0.4489]])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1496,6 +1581,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor(-0.0293)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1510,6 +1611,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor(0.6751)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1555,6 +1672,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor(2.1554)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1569,6 +1702,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor(3.7008)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1626,6 +1775,27 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(tensor([[ 0.,  1.,  2.,  3.],
+         [ 4.,  5.,  6.,  7.],
+         [ 8.,  9., 10., 11.]]),
+ tensor([[2., 1., 4., 3.],
+         [1., 2., 3., 4.],
+         [4., 3., 2., 1.]]))</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1651,6 +1821,28 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[[ 0.,  1.,  2.,  3.],
+         [ 4.,  5.,  6.,  7.],
+         [ 8.,  9., 10., 11.]],
+
+        [[ 2.,  1.,  4.,  3.],
+         [ 1.,  2.,  3.,  4.],
+         [ 4.,  3.,  2.,  1.]]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1665,6 +1857,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>torch.Size([2, 3, 4])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1693,6 +1901,29 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[[ 0.,  1.,  2.,  3.],
+         [ 2.,  1.,  4.,  3.]],
+
+        [[ 4.,  5.,  6.,  7.],
+         [ 1.,  2.,  3.,  4.]],
+
+        [[ 8.,  9., 10., 11.],
+         [ 4.,  3.,  2.,  1.]]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1707,6 +1938,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>torch.Size([3, 2, 4])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1727,6 +1974,35 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[[ 0.,  2.],
+         [ 1.,  1.],
+         [ 2.,  4.],
+         [ 3.,  3.]],
+
+        [[ 4.,  1.],
+         [ 5.,  2.],
+         [ 6.,  3.],
+         [ 7.,  4.]],
+
+        [[ 8.,  4.],
+         [ 9.,  3.],
+         [10.,  2.],
+         [11.,  1.]]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1741,6 +2017,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>torch.Size([3, 4, 2])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1773,6 +2065,24 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[False,  True, False,  True],
+        [False, False, False, False],
+        [False, False, False, False]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1795,6 +2105,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor(2)</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1858,6 +2184,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([ 3.,  4.,  6., 10.])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1880,6 +2222,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([-1.,  0.,  2.,  6.])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1913,6 +2271,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([ 2.,  4.,  8., 16.])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -1935,6 +2309,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([ 1.,  4., 16., 64.])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -1987,6 +2377,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([2., 4., 6.])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -2010,6 +2416,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([2., 4., 6.])</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -2074,6 +2496,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>tensor([[ 1.,  2.,  3.],
+        [11., 12., 13.],
+        [21., 22., 23.],
+        [31., 32., 33.]])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -2134,7 +2575,7 @@ $$C_{ij} = \sum_kA_{ik}B_{kj}$$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Em código, no geral é mais fácil visualizar:</p>
+<p>Em código, no geral é mais fácil visualizar, vamos criar 2 matrizes de tamanho razoável para analisarmos a eficiência dos cálculos:</p>
 
 </div>
 </div>
@@ -2146,8 +2587,8 @@ $$C_{ij} = \sum_kA_{ik}B_{kj}$$
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">7.</span><span class="p">,</span> <span class="mf">8.</span><span class="p">],</span> <span class="p">[</span><span class="mf">9.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">11.</span><span class="p">,</span> <span class="mi">12</span><span class="p">]])</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">1.</span><span class="p">]])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">56</span><span class="p">,</span> <span class="mi">112</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">112</span><span class="p">,</span> <span class="mi">56</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2232,7 +2673,7 @@ $$C_{ij} = \sum_kA_{ik}B_{kj}$$
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">a_linhas</span><span class="p">,</span> <span class="n">b_cols</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">a_linhas</span><span class="p">,</span> <span class="n">b_colunas</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -2245,70 +2686,27 @@ $$C_{ij} = \sum_kA_{ik}B_{kj}$$
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Agora iterando os índices para gerar a matriz resultado temos 3 loops:</p>
+<p>Na definição básica da multiplicação de matriz temos 3 loops:</p>
 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
+<div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a_linhas</span><span class="p">):</span>
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a_linhas</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">b_colunas</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a_colunas</span><span class="p">):</span> <span class="c1"># ou b_linhas</span>
             <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">b</span><span class="p">[</span><span class="n">k</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
 </pre></div>
 
-    </div>
 </div>
 </div>
-
 </div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>tensor([[11., 12.,  8.],
-        [27., 36., 20.],
-        [43., 60., 32.]])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vamos colocar a definição acima numa função, assim não repetimos código e podemos reutilizá-lo</p>
+<p>Vamos colocar a definição acima numa função, assim não repetimos código, podemos reutilizá-lo e mensurar o tempo médio de execução</p>
 
 </div>
 </div>
@@ -2373,8 +2771,8 @@ $$C_{ij} = \sum_kA_{ik}B_{kj}$$
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 2.35 ms, sys: 0 ns, total: 2.35 ms
-Wall time: 1.74 ms
+<pre>CPU times: user 14.8 s, sys: 3.14 ms, total: 14.8 s
+Wall time: 14.8 s
 </pre>
 </div>
 </div>
@@ -2388,7 +2786,7 @@ Wall time: 1.74 ms
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como a operação possui 3 loops, para matrizes de grandes dimensões essa definição rapidamente se torna insustentável. Ao tentarmos eliminar os "loops", nós tornamos a operação mais eficiente, por utilizar debaixo dos panos métodos de "vetorização".</p>
+<p>Vemos que essas matrizes, muito pequenas para os parâmetros modermos de Deep Learning, o cálculo já leva um tempo enorme, o que a torna insustentável. Na prática os "loops" são eliminados, e métodos eficientes de "vetorização" são utilizados. Vamos testar como podemos otimizar o código somente utilizando o <em>broadcasting</em> visto</p>
 
 </div>
 </div>
@@ -2451,45 +2849,10 @@ Wall time: 1.74 ms
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 2.19 ms, sys: 0 ns, total: 2.19 ms
-Wall time: 10 ms
+<pre>CPU times: user 139 ms, sys: 3.97 ms, total: 143 ms
+Wall time: 142 ms
 </pre>
 </div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>tensor([[11., 12.,  8.],
-        [27., 36., 20.],
-        [43., 60., 32.]])</pre>
-</div>
-
 </div>
 
 </div>
@@ -2529,10 +2892,10 @@ Wall time: 10 ms
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">RuntimeError</span>                              Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-60-c7015e3e45b9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-67-c7015e3e45b9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>a<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">*</span> b
 
-<span class="ansi-red-fg">RuntimeError</span>: The size of tensor a (4) must match the size of tensor b (3) at non-singleton dimension 1</pre>
+<span class="ansi-red-fg">RuntimeError</span>: The size of tensor a (112) must match the size of tensor b (56) at non-singleton dimension 1</pre>
 </div>
 </div>
 
@@ -2556,22 +2919,6 @@ Wall time: 10 ms
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>torch.Size([4])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -2586,22 +2933,6 @@ Wall time: 10 ms
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>torch.Size([4, 3])</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -2638,22 +2969,6 @@ Wall time: 10 ms
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>torch.Size([4, 1])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -2668,22 +2983,6 @@ Wall time: 10 ms
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>torch.Size([4, 1])</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -2733,21 +3032,6 @@ Wall time: 10 ms
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 1.09 ms, sys: 0 ns, total: 1.09 ms
-Wall time: 2.84 ms
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -2762,24 +3046,6 @@ Wall time: 2.84 ms
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>tensor([[11., 12.,  8.],
-        [27., 36., 20.],
-        [43., 60., 32.]])</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -2808,21 +3074,6 @@ Wall time: 2.84 ms
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 122 µs, sys: 20 µs, total: 142 µs
-Wall time: 155 µs
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -2845,21 +3096,6 @@ Wall time: 155 µs
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>CPU times: user 113 µs, sys: 19 µs, total: 132 µs
-Wall time: 141 µs
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
