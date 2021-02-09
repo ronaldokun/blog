@@ -20,7 +20,7 @@ It can be tempting to jump into a new project by questioning the stylistic decis
 
 ## Did you find a bug?
 
-* Nobody is perfect, especially not us. But first, please double-check the bug doesn't come from something on your side. The [forum](http://forums.fast.ai/) is a tremendous source for help, and we'd advise to use it as a first step. Be sure to include as much code as you can so that other people can easily help you.
+* Nobody is perfect, especially not us. But first, please double-check the bug doesn't come from something on your side. The [forum](https://forums.fast.ai/) is a tremendous source for help, and we'd advise to use it as a first step. Be sure to include as much code as you can so that other people can easily help you.
 * Then, ensure the bug was not already reported by searching on GitHub under [Issues](https://github.com/fastai/fastpages/issues).
 * If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/fastai/fastpages/issues/new). Be sure to include a title and clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behavior that is not occurring.
 * Be sure to add the complete error messages.
@@ -34,7 +34,7 @@ It can be tempting to jump into a new project by questioning the stylistic decis
 
 ## Do you intend to add a new feature or change an existing one?
 
-* You can suggest your change on the [fastai forum](http://forums.fast.ai/) to see if others are interested or want to help. 
+* You can suggest your change on the [fastai forum](https://forums.fast.ai/) to see if others are interested or want to help. 
 * Once your approach has been discussed and confirmed on the forum, you are welcome to push a PR, including a complete description of the new feature and an example of how it's used. Be sure to document your code in the notebook.
 * Ensure that your code includes tests that exercise not only your feature, but also any other code that might be impacted.
 
@@ -55,7 +55,7 @@ Some general rules of thumb that will make your life easier.
 
 ## Do you have questions about the source code?
 
-* Please ask it on the [fastai forum](http://forums.fast.ai/) (after searching someone didn't ask the same one before with a quick search). We'd rather have the maximum of discussions there so that the largest number can benefit from it.
+* Please ask it on the [fastai forum](https://forums.fast.ai/) (after searching someone didn't ask the same one before with a quick search). We'd rather have the maximum of discussions there so that the largest number can benefit from it.
 
 ## Do you want to contribute to the documentation?
 
